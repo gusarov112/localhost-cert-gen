@@ -1,0 +1,21 @@
+[ req ]
+default_bits = 2048
+distinguished_name = req_distinguished_name
+default_md = sha256
+default_days = 24854
+prompt = no
+req_extensions = v3_ca
+encrypt_key = no
+
+[ req_distinguished_name ]
+C = GB
+ST = London
+L = EN
+O = LocalDev
+OU = Dev
+CN = *.localhost
+emailAddress = dev@localhost
+
+[ v3_ca ]
+basicConstraints = CA:FALSE
+subjectKeyIdentifier=hash

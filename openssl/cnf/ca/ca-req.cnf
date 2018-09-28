@@ -1,0 +1,16 @@
+[ req ]
+default_bits = 2048
+distinguished_name = req_distinguished_name
+default_md = sha1
+prompt = no
+encrypt_key = no
+basicConstraints = CA:TRUE, pathlen:0
+
+[ req_distinguished_name ]
+C = GB
+ST = London
+L = EN
+O = LocalDev
+OU = Dev
+CN = *.localhost
+emailAddress = dev@localhost
